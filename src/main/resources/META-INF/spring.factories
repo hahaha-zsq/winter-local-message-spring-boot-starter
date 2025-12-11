@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.zsq.winter.local.message.config.LocalTaskMessageAutoConfig,\
+com.zsq.winter.local.message.config.KafkaNotifyAutoConfig,\
+com.zsq.winter.local.message.config.RocketMQNotifyAutoConfig,\
+com.zsq.winter.local.message.config.RabbitMQNotifyAutoConfig
