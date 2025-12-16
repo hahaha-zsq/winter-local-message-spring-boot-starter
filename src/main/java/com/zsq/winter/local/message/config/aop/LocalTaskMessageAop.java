@@ -131,6 +131,7 @@ public class LocalTaskMessageAop {
 
         // 情况2：当前无事务，开启新事务并将业务方法执行与消息处理统一包装在事务中
         try {
+            // TransactionTemplate.execute() 会自动 创建一个新事务（传播行为默认为 REQUIRED，无事务则新建一个）。
             return transactionTemplate.execute(status -> {
                 try {
                     // 在新事务中先执行目标业务方法

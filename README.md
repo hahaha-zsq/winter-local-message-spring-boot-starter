@@ -173,7 +173,7 @@ graph TB
 
 ```java
 // 门牌号计算规则
-int houseNumber = Math.abs(taskId.hashCode()) % 100;
+int houseNumber = Math.abs(taskId.hashCode()) % 10;
 ```
 
 支持配置多个任务组，每个组负责不同的门牌号范围，实现水平扩展。
